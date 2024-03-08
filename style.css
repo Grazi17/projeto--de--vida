@@ -2,7 +2,7 @@
 
 :root{
     --cor-de-fundo:#1E1E1E;
-    --verde: #6FFF57;
+    --rosa: #ff57cf;
     --branco: #FFFFFF;
     --botao-ativo: #3A375E;
     --botao-inativo: rgba(58, 55, 94, 0.5);
@@ -28,7 +28,7 @@ body {
     font-size: 32px;
 }
 .titulo-principal span {
-    color: var(--verde);
+    color: var(--rosa);
 }
 .botao{
     font-family: "Crakra Petch", sans-serif;
@@ -46,17 +46,18 @@ body {
     border-top: none;
 
 }
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+
 .botoes {
     display: block;
 }
 
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
+.ativo{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--rosa);
 }
-.botao:first-child {
-    border-radius: 40px 40px 0 0;}
 
 @media screen and (min-width: 768px) {
     .botoes {
@@ -71,10 +72,11 @@ body {
         border-radius: 0 40px 0 0;
     }
 }
-.ativo{
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-    }
-    
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
 
   
